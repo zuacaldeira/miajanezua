@@ -114,6 +114,7 @@ h1 {
     font-size: 3em;
     line-height: 70px;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 section article h2 {
@@ -249,6 +250,7 @@ section article .colum {
 .summaries figure figcaption {
     width: 100%;
     text-align: center;
+    text-transform: capitalize;
     transition: font-size ease-in-out 1s;
     overflow: hidden;
 }
