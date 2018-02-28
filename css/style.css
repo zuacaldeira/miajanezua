@@ -83,7 +83,10 @@ nav ul li.active a {
 /*---------------------------------------------------------------------------
  * MAIN
  *----------------------------------------------------------------------------*/
-main{}
+main{
+    background: url(http://source.unsplash.com/random?outdoor) no-repeat center center fixed;
+    background-size: cover;    
+}
 
 section {
     display: block;
@@ -96,17 +99,18 @@ section:hover {
 
 
 section article {
-    width: 90%;
+    width: 100%;
     min-width: 300px;
     margin: 0 auto;
-    text-align: left;
     padding: 50px 0;
     font-family: 'Kurale';
+    
 }
 
-section article h1 {
-    padding: 100px 0 0 0;
-    margin: 0;
+h1 {
+    padding-top: 20vh;
+    text-align: center;
+    bottom: 50%;
     font-size: 3em;
     line-height: 70px;
     font-weight: 600;
@@ -142,70 +146,97 @@ section article .colum {
     margin: 50px 5%;
 }
 
-#home {
-    min-height: 100vh;
-    background: url(http://source.unsplash.com/random?grammar) no-repeat center center fixed;
-    background-size: cover;
+/* HOME Section */
+#home article {
+    min-height:100vh;
     color: #fff;
+    transition: background ease 10s;
 }
 
-#ultimas {
-    min-height: 100vh;
-    background: url(http://source.unsplash.com/random?news) no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
+#home article:hover {
+    background: rgba(0,100,0,.7);
 }
 
-#areas {
-    min-height: 100vh;
-    background: url(http://source.unsplash.com/random?books) no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
+#home article h1 {
+    padding-top: 45vh;
 }
 
-#actividades {
+/* LATEST Section */
+#ultimas article {
     min-height: 100vh;
-    background: url(http://source.unsplash.com/random?outdoor) no-repeat center center fixed;
-    background-size: cover;
     color: #fff;
+    transition: background ease 10s;
+}
+#ultimas article:hover {
+    background: rgba(0,50,175,.7);
 }
 
-#festas {
+/* AREAS Section */
+#areas article {
     min-height: 100vh;
-    background: url(http://source.unsplash.com/random?color) no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
+    color: #fff;    
+    transition: background ease 10s;
+}
+#areas article:hover {
+    background: rgba(200,0,0,.7);
 }
 
-#projectos {
+/* AREAS Section */
+#actividades article {
     min-height: 100vh;
-    background: url(http://source.unsplash.com/random?golden) no-repeat center center fixed;
-    background-size: cover;
     color: #fff;
+    transition: background ease 10s;
+}
+#actividades article:hover {
+    background: rgba(0,255,200,.7);
 }
 
-#procura {
+/* FESTAS Section */
+#festas article {
+    transition: background ease 10s;
     min-height: 100vh;
-    background: url(http://source.unsplash.com/random?search) no-repeat center center fixed;
-    background-size: cover;
     color: #fff;
+}
+#festas article:hover {
+    background: rgba(255,155,0,.7);
+}
+
+/* PROJECTOS Section */
+#projectos article {
+    min-height: 100vh;
+    color: #fff;
+    transition: background ease 10s;
+}
+#projectos article:hover {
+    background: rgba(255,0,155,.6);
+}
+
+/* CONTATOS Section */
+#contactos article {
+    min-height: 100vh;
+    color: #fff;
+    transition: background ease 10s;
+}
+#contactos article:hover {
+    background: rgba(155,255,0,.6);
 }
 
 
 /* SUMMARIES */
 .summaries {
-    width: 100%;
-    overflow-y: scroll;
+    width: 80%;
+    height: auto;
+    overflow: scroll;
+    padding: 0 10%;
 }
 
 .summaries .summary {
-    width: 49.5%;
+    width: 49%;
     height: 6.8em;
+    margin: .25% .25%;
+    border: 1px solid #fff;
     float: left;
-    padding-top: 2em;
-    border: .1% solid #fff;
-    margin: .25%;
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.1);
     transition: background-color ease-in-out 1s;
 }
 .summaries .summary:nth-child(odd):hover {
