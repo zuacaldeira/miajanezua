@@ -34,7 +34,20 @@ nav {
     width: 100%;
     height: 5em;
     background: rgba(0, 0, 0, .9);
+    transition: background linear 1s;
 }
+nav:hover {
+    background: white;
+}
+nav:hover a {
+    color: black;
+}
+
+nav:hover a:hover,
+nav:hover li.active a:hover{
+    color: red;
+}
+
 
 /* Navigation list */
 
@@ -84,7 +97,7 @@ nav ul li.active a {
  * MAIN
  *----------------------------------------------------------------------------*/
 main{
-    background: url(http://source.unsplash.com/random?outdoor) no-repeat center center fixed;
+    background: url(http://source.unsplash.com/random?pen) no-repeat center center fixed;
     background-size: cover;    
 }
 
@@ -148,109 +161,121 @@ section article .colum {
 }
 
 /* HOME Section */
-#home article {
+#ahome article {
     min-height:100vh;
     color: #fff;
     transition: background ease 10s;
 }
 
-#home article:hover {
-    background: rgba(0,100,0,.7);
+#ahome article:hover {
+    background: rgba(0,100,0,.8);
 }
 
-#home article h1 {
+#ahome article h1 {
+    margin: 0 auto;
     padding-top: 45vh;
+    max-height: 55vh;
+    width: 100%;
+    height: 100vh;
+    transition: opacity ease-in-out 4s;
+    opacity: 0;
+}
+#ahome article h1:hover {
+    opacity: 1;
 }
 
 /* LATEST Section */
-#ultimas article {
+#aultimas article {
     min-height: 100vh;
     color: #fff;
     transition: background ease 10s;
 }
-#ultimas article:hover {
-    background: rgba(0,50,175,.7);
+#aultimas article:hover {
+    background: rgba(0,50,175,.8);
 }
 
+
+
 /* AREAS Section */
-#areas article {
+#aareas article {
     min-height: 100vh;
     color: #fff;    
     transition: background ease 10s;
+    
 }
-#areas article:hover {
-    background: rgba(200,0,0,.7);
+#aareas article:hover {
+    background: rgba(200,0,0,.8);
 }
 
 /* AREAS Section */
-#actividades article {
+#aatividades article {
     min-height: 100vh;
     color: #fff;
     transition: background ease 10s;
 }
-#actividades article:hover {
-    background: rgba(0,255,200,.7);
+#aatividades article:hover {
+    background: rgba(0,255,200,.8);
 }
 
 /* FESTAS Section */
-#festas article {
+#afestas article {
     transition: background ease 10s;
     min-height: 100vh;
     color: #fff;
 }
-#festas article:hover {
-    background: rgba(255,155,0,.7);
+#afestas article:hover {
+    background: rgba(155,155,0,.8);
 }
 
-/* PROJECTOS Section */
-#projectos article {
+/* projetoS Section */
+#aprojetos article {
     min-height: 100vh;
     color: #fff;
     transition: background ease 10s;
 }
-#projectos article:hover {
-    background: rgba(255,0,155,.6);
+#aprojetos article:hover {
+    background: rgba(255,0,155,.8);
 }
 
 /* CONTATOS Section */
-#contactos article {
+#acontatos article {
     min-height: 100vh;
     color: #fff;
     transition: background ease 10s;
 }
-#contactos article:hover {
-    background: rgba(155,255,0,.6);
+#acontatos article:hover {
+    background: rgba(155,255,0,.8);
 }
 
 
 /* SUMMARIES */
 .summaries {
-    width: 80%;
+    width: 60%;
     height: auto;
     overflow: scroll;
-    padding: 0 10%;
+    padding: 0 20%;
 }
 
 .summaries .summary {
-    width: 49%;
+    width: 6.8em;
     height: 6.8em;
-    margin: .25% .25%;
-    border: 1px solid #fff;
+    margin: .25em .25em;
+    border: .2em solid #fff;
+    border-radius: 10%;
     float: left;
     background: rgba(0,0,0,.1);
     transition: background-color ease-in-out 1s;
 }
 .summaries .summary:nth-child(odd):hover {
-    background-color: rgba(255,0,0,.5);
+    background-color: gainsboro;
 }
 .summaries .summary:hover {
-    background-color: rgba(255,255,0,.5);
+    background-color: black;
 }
 
 .summaries figure figcaption {
     width: 100%;
     text-align: center;
-    text-transform: capitalize;
     transition: font-size ease-in-out 1s;
     overflow: hidden;
 }
